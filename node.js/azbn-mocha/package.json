@@ -1,0 +1,16 @@
+{
+  "name": "azbn-mocha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "= <alexander.zybin@yandex.ru>",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^3.2.0",
+    "request": "^2.79.0"
+  }
+}
