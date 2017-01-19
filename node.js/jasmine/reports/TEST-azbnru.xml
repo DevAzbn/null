@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="Доступность сайтов azbn.ru" errors="0" tests="2" failures="0" time="1.31" timestamp="2017-01-19T16:50:30">
+  <testcase classname="Доступность сайтов azbn.ru" name="https://azbn.ru/" time="0.498"></testcase>
+  <testcase classname="Доступность сайтов azbn.ru" name="http://bercan.ru/" time="0.812"></testcase>
+</testsuite>
+</testsuites>

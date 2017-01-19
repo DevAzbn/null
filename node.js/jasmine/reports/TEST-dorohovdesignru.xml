@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="Доступность сайтов dorohovdesign.ru" errors="0" tests="4" failures="0" time="2.694" timestamp="2017-01-19T16:50:32">
+  <testcase classname="Доступность сайтов dorohovdesign.ru" name="http://dorohovdesign.ru/" time="0.951"></testcase>
+  <testcase classname="Доступность сайтов dorohovdesign.ru" name="http://yarus57.ru/" time="0.452"></testcase>
+  <testcase classname="Доступность сайтов dorohovdesign.ru" name="http://fe.enerfit.ru/" time="0.841"></testcase>
+  <testcase classname="Доступность сайтов dorohovdesign.ru" name="http://endurancerobots.com/" time="0.45"></testcase>
+</testsuite>
+</testsuites>
