@@ -1,0 +1,12 @@
+{
+  "name": "azbn-task-queue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node --verbose --junitreport spec"
+  },
+  "keywords": [],
+  "author": "= <alexander.zybin@yandex.ru>",
+  "license": "ISC"
+}

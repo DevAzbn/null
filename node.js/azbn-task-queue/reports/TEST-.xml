@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="Базовый функционал" errors="0" tests="2" failures="0" time="2.037" timestamp="2017-01-19T21:32:23">
+  <testcase classname="Базовый функционал" name="Существование объекта и нужных функций" time="0.007"></testcase>
+  <testcase classname="Базовый функционал" name="Выполнение 1 задания" time="2.029"></testcase>
+</testsuite>
+</testsuites>
