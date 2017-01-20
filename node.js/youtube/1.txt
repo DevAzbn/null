@@ -1,0 +1,8 @@
+коллбек - /oauth2callback/youtube
+
+Client ID	
+716906483812-vfbfpoltrce9a7l2nibgvugag4npuf7e.apps.googleusercontent.com
+
+
+
+4/1PL1BGfCMe9sG1qEHLU1G_jmgAY_dUhIjNe6PVFsloQ
