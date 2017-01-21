@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html class="no-js" >
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="jquery.min.js" ></script>
+<script src="_.js" ></script>
+<script>
+$(function(){
+	
+	var result = $('.result').eq(0);
+	
+	if(__data) {
+		for(var i in __data.items) {
+			
+			var item = __data.items[i];
+			
+			var d = $('<div/>', {
+				html : item.snippet.publishedAt + ': ' + item.snippet.title,
+			});
+			
+			d.appendTo(result);
+			
+		}
+	}
+	
+});
+</script>
+
+</head>
+<body class="" >
+	
+	<div class="result" ></div>
+	
+</body>
+</html>
