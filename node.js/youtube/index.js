@@ -1,26 +1,36 @@
 'use strict';
 
+var SEARCH_STR = 'Орлец';
+
 var _
 	, google = require('googleapis')
-	, OAuth2 = google.auth.OAuth2
-	, secrets = require('./client_id.json')
-	, spawn = require('child_process').spawn;
+	, gclient = require('./google.youtube.createClient')
+	, util = require('util')
+	, fs = require('fs')
 ;
 
-
-var g_app = new OAuth2(
-	secrets.web.client_id,
-	secrets.web.client_secret,
-	secrets.web.redirect_uris[0]
-);
+var youtube = google.youtube({
+	version : 'v3',
+	auth : gclient.oAuth2Client
+});
 
 var scopes = [
 	'https://www.googleapis.com/auth/youtube',
+	'https://www.googleapis.com/auth/youtube.upload',
 ];
 
-var authorizeUrl = g_app.generateAuthUrl({
-	access_type : 'offline',
-	scope : scopes.join(' ')
+gclient.execute(scopes, function() {
+	youtube.search.list({
+		part : 'id,snippet',
+		q : SEARCH_STR,
+	}, function (err, data) {
+		if (err) {
+		  console.error('Error: ' + err);
+		}
+		if (data) {
+			//console.log(util.inspect(data, false, null));
+			fs.writeFileSync(SEARCH_STR + '.json', JSON.stringify(data));
+		}
+		process.exit();
+	});
 });
-
-spawn('C:/Users/Дизайнер/AppData/Local/Yandex/YandexBrowser/Application/browser.exe', [authorizeUrl]);
