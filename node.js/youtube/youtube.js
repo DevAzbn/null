@@ -21,15 +21,18 @@ var youtube = google.youtube({
 
 googleClient.execute(function() {
 	
-	youtube.search.list({
+	youtube.subscriptions.list({
 		part : 'id,snippet',
 		maxResults : 50,
-		order : 'date',
+		mine : true,
+		
+		//order : 'date',//для видео
 		//type : 'video',//при поиске
-		myRating : 'like',
+		//myRating : 'like',
+		
 		//chart : 'mostPopular',
 		//q : APP_SEARCH_STR,//для поиска
-		//order : true,
+		
 	}, function (err, data) {
 		
 		if (err) {

@@ -32,6 +32,7 @@ var createClient = function() {
 		
 		return ctrl.oAuth2Client.generateAuthUrl({
 			access_type : 'offline',
+			approval_prompt : 'force', //автономный доступ к акку
 			scope : scopes.join(' '),
 		});
 		
